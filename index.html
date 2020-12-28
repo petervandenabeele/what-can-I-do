@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>What can I do about Climate Change?</title>
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body>
+        <h1>What can <b>I</b> do about Climate Change?</h1>
+        <p>
+            Many things are possible, but a first one is understanding my <b>own</b> ecological footprint.
+            This sites allows calculation of my footprint, based on daily behaviors, e.g. food, transport,
+            working, living at home, ...
+        </p>
+        <p>
+            What would be my yearly production of greenhouse gasses (CO2 and other equivalent gasses) based
+            on this behavior:
+        </p>
+        <p>
+            <from id="Input" action="#">
+                <fieldset>
+                    <p>Adapt the values below for your personal situation:</p>
+                    <p>
+                        <input type="text" id="grams_of_meat_per_week" name="grams_of_meat_per_week" size="10" value="300">
+                            <a href="model.html">grams of meat</a> (per week)
+                        </input>
+                    </p>
+                    <p>
+                        <input type="button" value="Calculate" onclick="f_ProcessInput ()">
+                        </input>
+                    </p>
+                </fieldset>
+            </from>
+        </p>
+        <p>
+            <from id="Output" action="#">
+                <fieldset>
+                    <p>This is your yearly (equivalent) CO2 emission in tons per year:</p>
+                    <p>
+                        <input type="text" id="total_yearly_CO2_emission" name="total_yearly_CO2_emission" size="10" readonly="readonly">
+                            tons of CO2 emission per year.
+                        </input>
+                    </p>
+                </fieldset>
+            </from>
+        </p>
+    </body>
+</html>
